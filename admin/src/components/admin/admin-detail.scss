@@ -1,0 +1,231 @@
+.adminDetail-main {
+    .idoform {
+        background: white;
+        border-radius: 10px;
+        padding: 30px;
+        margin: 60px 0px;
+        box-shadow: 0px 4px 30px 0px #1FA5FF1A;
+
+        .main-text-feild-head {
+            p {
+                font-size: 17px;
+                line-height: 15px;
+                font-size: 20px;
+                line-height: 15px;
+                color: #a5b0ce;
+            }
+        }
+        .main-text-feild-head2 {
+            p {
+                font-weight: normal;
+                font-size: 20px;
+                line-height: 25px;
+                text-align: justify;
+                text-justify: inter-word;
+
+                color: #a5b0ce;
+            }
+        }
+        .main-text-feild-head3 {
+            p {
+                width: 100%;
+                // font-size: 20px;
+                // line-height: 15px;
+                font-size: 20px;
+                line-height: 15px;
+
+                color: #a5b0ce;
+            }
+        }
+        label {
+            font-size: 16px;
+            line-height: 28px;
+            color: #1fa5ff;
+            // margin-bottom: 12px;
+        }
+        .borderbotom{
+            height: .5px;
+            width: 100%;
+            background: #1fa5ff;
+            border-radius: 10px;
+        }
+        .pesale-details {
+            h5 {
+                color: red;
+                margin-bottom: 30px;
+                font-weight: bold;
+                font-size: 28px;
+                color: #212121;
+            }
+        }
+        .upload-div {
+            position: relative;
+            width: 100%;
+            height: 236px;
+            background: #ffffff;
+            border: 2px dashed rgba(196, 196, 196, 0.5);
+            box-sizing: border-box;
+            border-radius: 9px;
+            overflow: hidden;
+            .dimColor{
+                color: #97d5ff;;
+            }
+            
+            &:hover {
+                .upload-btn {
+                    background-color: rgba(97, 97, 97, 0.562);
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    // padding-top: 4%;
+                    width: 100%;
+                    height: 100%;
+                    padding: 75px;
+                    transform: translate(-50%, -50%);
+                    cursor: pointer;
+                    border-radius: 10px;
+                }
+            }
+            img {
+                border-radius: 9px;
+
+                object-fit: cover;
+            }
+            .imoo{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            .upload-btn {
+                // background-color: red;
+
+                // background-color: rgba(97, 97, 97, 0.562);
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                // margin-top: 0%;
+                width: 100%;
+                height: 100%;
+                padding: 75px;
+                transform: translate(-50%, -50%);
+                cursor: pointer;
+                border-radius: 10px;
+            }
+        }
+        // .upload-div2 {
+        //     padding: 0;
+        //     background: transparent;
+        //     border: 2px dashed rgba(196, 196, 196, 0.5);
+        //     box-sizing: border-box;
+        //     border-radius: 9px;
+        //     overflow: hidden;
+        //     &:hover {
+        //         background-color: transparent;
+        //         color: none;
+        //     }
+        //     img {
+        //         width: 100%;
+        //         height: 100%;
+        //         border-radius: 9px;
+        //         object-fit: cover;
+        //         padding: 10px;
+        //     }
+        //     .upload-btn {
+        //         position: absolute;
+        //         left: 50%;
+        //         top: 46%;
+        //         transform: translate(-50%, -50%);
+        //     }
+        // }
+        .btn-common-clear{
+            color: #FF5757;
+            background: transparent;
+            border: none;
+            border: 1px solid #FF5757;
+            &:hover{
+                color: #fff;
+                background: #FF5757;
+            }
+        }
+    }
+    @media (max-width:661px){
+        br{
+            display: none;
+        }
+        .idoform {
+            padding: 20px 2px;
+        }
+    }
+}
+
+.dark{
+    .adminDetail-main {
+        background: #000915;
+        .idoform {
+            background: #00040A;
+            box-shadow: 0px 4px 30px 0px #1FA5FF1A;
+    
+            .main-text-feild-head {
+                p {
+                    color: #9EADC5;;
+                }
+            }
+            .main-text-feild-head2 {
+                p {
+                    color: #9EADC5;;
+                }
+            }
+            .main-text-feild-head3 {
+                p {
+                    color: #9EADC5;;
+                }
+            }
+            label {
+                color: #1fa5ff;
+            }
+            .borderbotom{
+                background: #253446;
+            }
+            .pesale-details {
+                h5 {
+                    color: #fff;
+                }
+            }
+            .upload-div {
+                background: #000F28;
+                border: 2px dashed #253446;
+                .dimColor{
+                    color: #97d5ff;;
+                }
+                
+                &:hover {
+                    .upload-btn {
+                        background-color: rgba(97, 97, 97, 0.562);
+                    }
+                }
+            }
+            .btn-common-clear{
+                color: #FF5757;
+                background: transparent;
+                border: 1px solid #FF5757;
+                &:hover{
+                    color: #fff;
+                    background: #FF5757;
+                }
+            }
+        }
+        @media (max-width:661px){
+            br{
+                display: none;
+            }
+            .idoform {
+                padding: 20px 2px;
+            }
+        }
+    }  
+}
+
+
+.sjbndsjbdsjd{
+    background-color: red!important;
+}

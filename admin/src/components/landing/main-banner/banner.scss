@@ -1,0 +1,89 @@
+.main-banner {
+    background-image: url("../../../Assets/header-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+
+    // background-image: url("../../../Assets/header-background.png");
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-position-x: right;
+    // background-position-y: bottom;
+
+    .inner-content {
+        .inner-img {
+            h6 {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 22px;
+                line-height: 26px;
+                /* identical to box height */
+
+                text-transform: uppercase;
+
+                color: #1fa5ff;
+            }
+            margin-bottom: 20px;
+            .btn-common2 {
+                padding: 8px 20px;
+                margin-top: 50px ;
+            }
+        }
+    }
+}
+
+.dark {
+    .main-banner {
+        // background: #000915;
+        background-image: url("../../../Assets/header-background-dark.png");
+    }
+    .inner-content {
+        .inner-img {
+            h1 {
+                color: #fff;
+            }
+            h6 {
+                color: #1fa5ff;
+            }
+            p {
+                color: #9eadc5;
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+}
+@media (max-width: 768px) {
+    .main-banner {
+        // background-image: url("../../../Assets/header-background.png");
+        // background-repeat: no-repeat;
+        // background-size: cover;
+        // background-position-x: unset;
+        // background-position-y: unset;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .main-banner {
+        text-align: center;
+    }
+    .btn-common {
+        padding: 8px 16px;
+    }
+    .main-banner .btn-common{
+        font-size: 14px;
+        img{
+            height: 16px;
+        }
+    }
+    .main-banner .inner-content .inner-img .btn-common2 {
+        padding: 8px 14px;
+    }
+    .main-banner .inner-content .inner-img .btn-common2 {
+        padding: 2px 20px;
+        margin-top: 0px;
+        img{
+                height: 15px;
+        }
+    }
+}

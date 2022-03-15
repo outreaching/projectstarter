@@ -1,0 +1,29 @@
+.main-rewards {
+    background: #f6faff;
+    .center-seen {
+        img {
+            margin: 40px auto;
+        }
+    }
+}
+.dark {
+    .main-rewards {
+        background: #000915;
+        .inner-content {
+            h4 {
+                color: #fff;
+            }
+            p {
+                color: #9eadc5;
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .main-features {
+        .inner-tile {
+            height: auto;
+        }
+    }
+}
