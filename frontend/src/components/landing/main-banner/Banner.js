@@ -40,10 +40,10 @@ const Banner = () => {
                                         </ul>
                                         <ul className="list-inline d-sm-block mt-2 d-none">
                                             <li className="list-inline-item mt-4">
-                                                <Link to=''><a href="#" target="_blank" className="btn-common2">Join us Telegram</a></Link>
+                                                <Link to=''><a href="https://www.instagram.com/projectstarter.io" target="_blank" className="btn-common2">Join us Telegram</a></Link>
                                             </li>
                                             <li className="list-inline-item mt-4">
-                                                <Link to=''> <a href="#" target="_blank" className="btn-common2">Follow our Twitter</a></Link>
+                                                <Link to=''> <a href="https://twitter.com/starter_project" target="_blank" className="btn-common2">Follow our Twitter</a></Link>
                                             </li>
                                             <li className="list-inline-item mt-4">
                                                 <Link to=''> <a href="#" target="_blank" className="btn-common2">Github <img src="/projectstarter/banner/github.svg" className="img-fluid ml-2 mb-1 pancakeBtn " alt="" /></a></Link>

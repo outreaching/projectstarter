@@ -11,7 +11,7 @@ function MeatTeam() {
                         <div className="row">
                             <div className="col-12">
                                 <div className="ourTeam-heading text-center ">
-                                    <h1 className="common">Meet out team</h1>
+                                    <h1 className="common">Our Team</h1>
                                     <p className='ptb20'>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut<br /> aliquid ex ea commodi consequatur  incidunt ut labore et dolore magnam aliquam.</p>
                                 </div>
                             </div>
@@ -19,10 +19,10 @@ function MeatTeam() {
                         <div className="row">
                             <div className="col-md-3">
                                 <div className="cardTeam">
-                                    <img src="projectstarter/socials/personImg.png" alt="personlogo" className='img-fluid' />
+                                    <img src="projectstarter/socials/Duke-Lim.jpg" alt="personlogo" className='img-fluid' />
                                     <div>
-                                        <h4>John Doe</h4>
-                                        <p>CEO/Founder</p>
+                                        <h4>Duke Lim</h4>
+                                        <p>CEO</p>
                                         <a href=""> <i class="fab fa-linkedin-in" /></a>
                                     </div>
                                 </div>
@@ -31,8 +31,8 @@ function MeatTeam() {
                                 <div className="cardTeam">
                                     <img src="projectstarter/socials/sarah.png" alt="personlogo" className='img-fluid' />
                                     <div>
-                                        <h4>Saron Denzen</h4>
-                                        <p>Co-Founder</p>
+                                        <h4>Darren Low</h4>
+                                        <p>CTO</p>
                                         <a href=""> <i class="fab fa-linkedin-in" /></a>
                                     </div>
                                 </div>

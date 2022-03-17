@@ -13,7 +13,7 @@ function FooterSecondary() {
                                 <img src="\projectstarter-dark\logo.svg" className='img-fluid' alt="logo" />
                             </div>
                             <div className="col-sm-6 text-center my-auto">
-                                <p className='mt-md-0 '>© PROJECTSTARTER - 2021 COPYRIGHT</p>
+                                <p className='mt-md-0 '>© PROJECTSTARTER - 2022 COPYRIGHT</p>
                             </div>
                             {/* <div className="col-12">
                                 <div className="footerS-inner ptb">

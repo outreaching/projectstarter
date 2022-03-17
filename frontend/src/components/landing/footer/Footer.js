@@ -33,9 +33,6 @@ const Footer = () => {
                                         <li>
                                             <a>Twitter</a>
                                         </li>
-                                        <li>
-                                            <a>Brand Kit</a> 
-                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -48,18 +45,6 @@ const Footer = () => {
                                         </li>
                                         <li>
                                             <a>CoinMarketCap</a>
-                                        </li>
-                                        <li>
-                                            <a>KuCoin</a>
-                                        </li>
-                                        <li>
-                                            <a>Gate.io</a>
-                                        </li>
-                                        <li>
-                                            <a>CHRTR.io</a>
-                                        </li>
-                                        <li>
-                                            <a>Cryptorank</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -82,7 +67,7 @@ const Footer = () => {
                                             <a>Github</a>
                                         </li>
                                         <li>
-                                            <a>Smart Contracts Audit</a>
+                                            <a>Smart Contracts Audit (Coming Soon)</a>
                                         </li>
                                     </ul>
                                 </div>
