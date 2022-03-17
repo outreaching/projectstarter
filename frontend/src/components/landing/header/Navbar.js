@@ -198,7 +198,7 @@ const Navbar = () => {
                       </li>
                       <li className="nav-item">
                         <Link to="/" className="nav-link btn-white">
-                        NFT marketplace
+                        NFT Marketplace
                         <div className="badge">Coming Soon</div>
                         </Link>
                       </li>
