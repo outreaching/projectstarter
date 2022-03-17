@@ -24,8 +24,8 @@ const Banner = () => {
                                 <div className="inner-content text-center">
                                     <div className="inner-img ">
                                         <h6 className="common mb-3">Welcome to <b>Projectstarter</b> </h6>
-                                        <h1 className=""> Launchpad ipsam quia dolor voluptatem quia<span className="common ">voluptas sit aspernatur aut odit </span></h1>
-                                        <p className="ptb20 grey">At vero eos et accusamus et iusto odio dignissimos ducimus qui blandis praesentium voluptatum deleniti <br /> atque corrupti quos dolores et quas molestias excepturi sint occaecati.</p>
+                                        <h1 className=""> ProjectStarter is the FIRST deflationary  <span className="common ">IDO & NFT Launchpad </span></h1>
+                                        <p className="ptb20 grey">Bridging Quality Crypto Projects IDOs to Savvy Investors</p>
                                         <ul className="list-inline d-sm-block d-none">
                                             <li className="list-inline-item mt-4">
                                                 <Link to=''> <a href="#" target="_blank" className="btn-common "><img src="/projectstarter/banner/pancakeImg.svg" className="img-fluid mr-2 mb-1 pancakeBtn" alt="" /> Buy on PancakeSwap</a></Link>
