@@ -13,7 +13,7 @@ const Footer = () => {
                             <div className="col-sm-3 text-center">
                                 <div className="inner-icon">
                                     <a className="navbar-brand" href="/">
-                                        <img src={dark==='dark'?"/projectstarter-dark/logo-footer.svg":'/projectstarter/header/logo.svg'} className="img-fluid" alt="" />
+                                        <img src={dark==='dark'?"/projectstarter-dark/logo-footer.svg":'/projectstarter/footer-logo.svg'} className="img-fluid" alt="" />
                                     </a>
                                 </div>
                             </div>
