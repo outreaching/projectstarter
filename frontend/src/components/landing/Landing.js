@@ -14,7 +14,7 @@ import TrustedPartner from './trustedpartner/TrustedPartner.js';
 
 function Landing() {
   return (
-    <>git push
+    <>
 
        <Banner/>
        <About/>
