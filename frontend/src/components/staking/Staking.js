@@ -1595,7 +1595,7 @@ function Staking() {
                                                                                 <h5>{totalStaked ? totalStaked : "0.00"}</h5>
                                                                             </li>
                                                                             <li className="liItems">
-                                                                                <p>UnStaked</p>
+                                                                                <p>Unstaked</p>
                                                                                 <h5>{totalUnStaked ? totalUnStaked : "0.00"}</h5>
                                                                             </li>
                                                                             <li className="liItems">
@@ -1629,7 +1629,7 @@ function Staking() {
                                                 <h5>{totalStaked ? totalStaked : "0.00"}</h5>
                                             </li>
                                             <li className="liItems">
-                                                <p>UnStaked</p>
+                                                <p>Unstaked</p>
                                                 <h5>{totalUnStaked ? totalUnStaked : "0.00"}</h5>
                                             </li>
                                             <li className="liItems">

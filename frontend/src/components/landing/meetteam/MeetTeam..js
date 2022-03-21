@@ -22,27 +22,47 @@ function MeatTeam() {
                                     <img src="projectstarter/socials/Duke-Lim.jpg" alt="personlogo" className='img-fluid' />
                                     <div>
                                         <h4>Duke Lim</h4>
-                                        <p>CEO</p>
+                                        <p>Chief Executive Officer</p>
                                         <a href=""> <i class="fab fa-linkedin-in" /></a>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-md-3">
                                 <div className="cardTeam">
-                                    <img src="projectstarter/socials/sarah.png" alt="personlogo" className='img-fluid' />
+                                    <img src="projectstarter/socials/Darren-Low.jpg" alt="personlogo" className='img-fluid' />
                                     <div>
                                         <h4>Darren Low</h4>
-                                        <p>CTO</p>
+                                        <p>Chief Technology Officer</p>
                                         <a href=""> <i class="fab fa-linkedin-in" /></a>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-md-3">
                                 <div className="cardTeam">
-                                    <img src="projectstarter/socials/Dduck.png" alt="personlogo" className='img-fluid' />
+                                    <img src="projectstarter/socials/Gary-Liu.jpg" alt="personlogo" className='img-fluid' />
                                     <div>
-                                        <h4>David Jonson</h4>
-                                        <p>Managing Director</p>
+                                        <h4>Gary Liu</h4>
+                                        <p>Chief Strategic Officer</p>
+                                        <a href=""> <i class="fab fa-linkedin-in" /></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-md-3">
+                                <div className="cardTeam">
+                                    <img src="projectstarter/socials/Barry-Tan.jpg" alt="personlogo" className='img-fluid' />
+                                    <div>
+                                        <h4>Barry Tan</h4>
+                                        <p>Chief Visionary Officer</p>
+                                        <a href=""> <i class="fab fa-linkedin-in" /></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-md-3">
+                                <div className="cardTeam">
+                                    <img src="projectstarter/socials/Nicole-Chen.jpg" alt="personlogo" className='img-fluid' />
+                                    <div>
+                                        <h4>Nicole Chen</h4>
+                                        <p>Chief Business Development</p>
                                         <a href=""> <i class="fab fa-linkedin-in" /></a>
                                     </div>
                                 </div>
@@ -51,8 +71,8 @@ function MeatTeam() {
                                 <div className="cardTeam">
                                     <img src="projectstarter/socials/personImg.png" alt="personlogo" className='img-fluid' />
                                     <div>
-                                        <h4>John Doe</h4>
-                                        <p>CEO/Founder</p>
+                                        <h4>Celeste Chen</h4>
+                                        <p>Business Development Manager</p>
                                         <a href=""> <i class="fab fa-linkedin-in" /></a>
                                     </div>
                                 </div>
@@ -61,28 +81,8 @@ function MeatTeam() {
                                 <div className="cardTeam">
                                     <img src="projectstarter/socials/Alex.png" alt="personlogo" className='img-fluid' />
                                     <div>
-                                        <h4>Alex </h4>
-                                        <p>Co-Founder</p>
-                                        <a href=""> <i class="fab fa-linkedin-in" /></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-md-3">
-                                <div className="cardTeam">
-                                    <img src="projectstarter/socials/personImg.png" alt="personlogo" className='img-fluid' />
-                                    <div>
-                                        <h4>John Doe</h4>
-                                        <p>CEO/Founder</p>
-                                        <a href=""> <i class="fab fa-linkedin-in" /></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-md-3">
-                                <div className="cardTeam">
-                                    <img src="projectstarter/socials/Alex.png" alt="personlogo" className='img-fluid' />
-                                    <div>
-                                        <h4>Alex </h4>
-                                        <p>Co-Founder</p>
+                                        <h4>Sean Tan</h4>
+                                        <p>Business Development Manager</p>
                                         <a href=""> <i class="fab fa-linkedin-in" /></a>
                                     </div>
                                 </div>

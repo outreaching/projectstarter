@@ -8,8 +8,8 @@ import Features from './features/Features.js';
 import Roadmap from './roadmap/Roadmap.js';
 import Faqs from './faqs/Faqs.js';
 import Footer from './footer/Footer.js';
-import MeatTeam from './meetteam/MeetTeam.';
-import TrustedPartner from './trustedpartner/TrustedPartner.';
+import MeatTeam from './meetteam/MeetTeam..js';
+import TrustedPartner from './trustedpartner/TrustedPartner..js';
 // import Community from './community/Community.js';
 
 
