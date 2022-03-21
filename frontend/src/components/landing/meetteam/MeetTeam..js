@@ -67,36 +67,9 @@ function MeatTeam() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-md-3">
-                                <div className="cardTeam">
-                                    <img src="projectstarter/socials/personImg.png" alt="personlogo" className='img-fluid' />
-                                    <div>
-                                        <h4>Celeste Chen</h4>
-                                        <p>Business Development Manager</p>
-                                        <a href=""> <i class="fab fa-linkedin-in" /></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-md-3">
-                                <div className="cardTeam">
-                                    <img src="projectstarter/socials/Alex.png" alt="personlogo" className='img-fluid' />
-                                    <div>
-                                        <h4>Sean Tan</h4>
-                                        <p>Business Development Manager</p>
-                                        <a href=""> <i class="fab fa-linkedin-in" /></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-md-3">
-                                <div className="cardTeam">
-                                    <img src="projectstarter/socials/personImg.png" alt="personlogo" className='img-fluid' />
-                                    <div>
-                                        <h4>John Doe</h4>
-                                        <p>CEO/Founder</p>
-                                        <a href=""> <i class="fab fa-linkedin-in" /></a>
-                                    </div>
-                                </div>
-                            </div>
+
+
+
                         </div>
                     </div>
                 </section>
