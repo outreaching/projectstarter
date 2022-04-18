@@ -121,10 +121,11 @@ const GetPartApprove = () => {
   try {
     const userPartApprove = useCallback(async (account, value, tier) => {
       const contractApp = TokenContract("0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56", web3);
+      let val = value * 30;
       const approved = await contractApp.methods
         .approve(
           Environment.seedContractAddress,
-          web3.utils.toWei(web3.utils.toWei(value.toString()), "ether")
+          web3.utils.toWei(web3.utils.toWei(val.toString()), "ether")
         )
         .send({ from: account }).on("transactionHash", (tx) => {
           return tx.transactionHash;

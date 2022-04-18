@@ -46,7 +46,7 @@ const Banner = () => {
       if (packag?.package1 === 0) {
         dumVal.package1 = 1;
         setTier(3);
-        setParticipate(10);
+        setParticipate(10000);
         if (dumVal.package2 === 1) {
           dumVal.package2 = 0;
         } else if (dumVal.package3 === 1) {
@@ -61,7 +61,7 @@ const Banner = () => {
       if (packag?.package2 === 0) {
         dumVal.package2 = 1;
         setTier(2);
-        setParticipate(30);
+        setParticipate(30000);
         if (dumVal.package1 === 1) {
           dumVal.package1 = 0;
         } else if (dumVal.package3 === 1) {
@@ -74,7 +74,7 @@ const Banner = () => {
       }
     } else if (val === 3) {
       if (packag?.package3 === 0) {
-        setParticipate(50);
+        setParticipate(50000);
         setTier(1);
         dumVal.package3 = 1;
         if (dumVal.package2 === 1) {
@@ -99,8 +99,14 @@ const Banner = () => {
         letsParticipate();
       }else {
         const res0 = await userPartApprove(account, participate, tier);
-        await setChAppr(true);
-        await setLoader(false);
+        if (res0?.code === 4001) {
+          await setLoader(false);
+        } else if (res0?.code) {
+          await setLoader(false);
+        } else {
+          await setChAppr(true);
+          await setLoader(false);
+        }
       }
     }
   };
