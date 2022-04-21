@@ -120,7 +120,7 @@ const GetPartApprove = () => {
   const web3 = useWeb3();
   try {
     const userPartApprove = useCallback(async (account, value, tier) => {
-      const contractApp = TokenContract("0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56", web3);
+      const contractApp = TokenContract("0x55d398326f99059ff775485246999027b3197955", web3);
       let val = value * 30;
       const approved = await contractApp.methods
         .approve(

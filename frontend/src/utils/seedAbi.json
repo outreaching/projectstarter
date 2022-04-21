@@ -213,6 +213,19 @@
         "type": "function"
     },
     {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "_newToken",
+                "type": "address"
+            }
+        ],
+        "name": "changeBUSDToken",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
         "inputs": [],
         "name": "claim",
         "outputs": [],

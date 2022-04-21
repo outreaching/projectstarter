@@ -10,15 +10,19 @@ import {
   GetPartApprove,
   GetClaim,
 } from "../../../hooks/dataFetcher";
+import { getIERC20Contract } from "../../../utils/contractHelpers";
 import "react-toastify/dist/ReactToastify.css";
 import { useSelector } from "react-redux";
 import { useWeb3React } from "@web3-react/core";
+import useWeb3 from "../../../hooks/useWeb3";
 
 const Banner = () => {
+  const web3 = useWeb3();
   const dark = useSelector((state) => state.UserReducer.theme);
   const [packag, setPackage] = useState(null);
   const [tier, setTier] = useState(null);
   const [rend, setRend] = useState(false);
+  const [busdBalance, setbusdBalance] = useState();
   const [loader, setLoader] = useState(false);
   const [participate, setParticipate] = useState(0);
   const { account } = useWeb3React();
@@ -30,6 +34,7 @@ const Banner = () => {
 
   useEffect(() => {
     getPackages();
+    BalanceBusd()
   }, [account]);
 
   const getPackages = async () => {
@@ -37,6 +42,24 @@ const Banner = () => {
       let res = await CheckPack(account);
       await setPackage(res);
       await setLoader(false);
+    }
+  };
+
+  console.log("balve usdt", busdBalance)
+
+  const BalanceBusd = async () => {
+    try {
+      const contractApp = getIERC20Contract(
+        "0x55d398326f99059ff775485246999027b3197955",
+        web3
+      );
+      const approved = await contractApp.methods.balanceOf(account).call();
+      setbusdBalance(approved / 10 ** 18).catch((err) => {
+        return err;
+      });
+      return approved;
+    } catch (err) {
+      console.log("balance err", err);
     }
   };
 
@@ -93,11 +116,14 @@ const Banner = () => {
   };
 
   const getParticipated = async () => {
-    if (participate > 0 && account) {
+    if (busdBalance <= 10) {
+      alert("Insufficient funds..!")
+    }
+    else if (participate > 0 && account) {
       setLoader(true);
       if (chAppr === true) {
         letsParticipate();
-      }else {
+      } else {
         const res0 = await userPartApprove(account, participate, tier);
         if (res0?.code === 4001) {
           await setLoader(false);
@@ -111,7 +137,7 @@ const Banner = () => {
     }
   };
 
-  const letsParticipate = async() => {
+  const letsParticipate = async () => {
     const res = await userParticipating(account, participate, tier);
     await getPackages();
     await setLoader(false);
@@ -178,7 +204,7 @@ const Banner = () => {
                           <div className="header">VC Package 1</div>
                           <div className="heading">
                             <p>
-                              10,000<span>BUSD</span>
+                              10,000<span>USDT</span>
                             </p>
                           </div>
                           <div className="d-flex pt-3 justify-content-between w-75 m-auto">
@@ -223,7 +249,7 @@ const Banner = () => {
                           <div className="header">VC Package 2</div>
                           <div className="heading">
                             <p>
-                              30,000<span>BUSD</span>
+                              30,000<span>USDT</span>
                             </p>
                           </div>
                           <div className="d-flex pt-3 justify-content-between w-75 m-auto">
@@ -268,7 +294,7 @@ const Banner = () => {
                           <div className="header">VC Package 3</div>
                           <div className="heading">
                             <p>
-                              50,000<span>BUSD</span>
+                              50,000<span>USDT</span>
                             </p>
                           </div>
                           <div className="d-flex pt-3 justify-content-between w-75 m-auto">
@@ -312,7 +338,11 @@ const Banner = () => {
                         onClick={() => getParticipated()}
                         className="but ml-4"
                       >
-                        {chAppr ? "Participate" : "Approve"}
+                        {busdBalance <= 10 ? (
+                          "Insufficient Funds"
+                        ) : (
+                          <> {chAppr ? "Participate" : "Approve"}</>
+                        )}
                       </button>
                     </div>
                   </div>
