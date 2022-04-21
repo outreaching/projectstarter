@@ -20,11 +20,11 @@ const Banner = () => {
   const web3 = useWeb3();
   const dark = useSelector((state) => state.UserReducer.theme);
   const [packag, setPackage] = useState(null);
-  const [tier, setTier] = useState(null);
+  const [tier, setTier] = useState(3);
   const [rend, setRend] = useState(false);
   const [busdBalance, setbusdBalance] = useState();
   const [loader, setLoader] = useState(false);
-  const [participate, setParticipate] = useState(0);
+  const [participate, setParticipate] = useState(10000);
   const { account } = useWeb3React();
   const { CheckPack } = UserPackages();
   const { userParticipating } = GetParticipated();
@@ -45,7 +45,7 @@ const Banner = () => {
     }
   };
 
-  console.log("balve usdt", busdBalance)
+  console.log("balve usdt", packag, participate)
 
   const BalanceBusd = async () => {
     try {
@@ -62,6 +62,8 @@ const Banner = () => {
       console.log("balance err", err);
     }
   };
+
+  console.log("++++++++++++++", tier)
 
   const selectPack = (val) => {
     let dumVal = packag;
@@ -116,7 +118,7 @@ const Banner = () => {
   };
 
   const getParticipated = async () => {
-    if (busdBalance <= 10) {
+    if (busdBalance <= participate) {
       alert("Insufficient funds..!")
     }
     else if (participate > 0 && account) {
@@ -196,7 +198,7 @@ const Banner = () => {
                           onClick={() => selectPack(1)}
                           className={
                             "cards bg-white cursor-pointer " +
-                            (packag?.package1 > 0
+                            (tier === 3
                               ? "card-bord"
                               : "card-bordwhite")
                           }
@@ -241,7 +243,7 @@ const Banner = () => {
                           onClick={() => selectPack(2)}
                           className={
                             "cards bg-white cursor-pointer " +
-                            (packag?.package2 > 0
+                            (tier === 2 
                               ? "card-bord"
                               : "card-bordwhite")
                           }
@@ -286,7 +288,7 @@ const Banner = () => {
                           onClick={() => selectPack(3)}
                           className={
                             "cards bg-white cursor-pointer " +
-                            (packag?.package3 > 0
+                            (tier === 1
                               ? "card-bord"
                               : "card-bordwhite")
                           }
@@ -338,7 +340,7 @@ const Banner = () => {
                         onClick={() => getParticipated()}
                         className="but ml-4"
                       >
-                        {busdBalance <= 10 ? (
+                        {busdBalance <= participate ? (
                           "Insufficient Funds"
                         ) : (
                           <> {chAppr ? "Participate" : "Approve"}</>
