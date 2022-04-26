@@ -604,7 +604,7 @@ abstract contract constructorLibrary {
 
 
 
-contract ProjectStarterLaunchPad is Ownable, constructorLibrary, ReentrancyGuard {
+contract ProjectStarterLaunchPadSeed is Ownable, constructorLibrary, ReentrancyGuard {
     using SafeMath for uint256;
 
     //token attributes
@@ -694,7 +694,7 @@ contract ProjectStarterLaunchPad is Ownable, constructorLibrary, ReentrancyGuard
         NAME_OF_PROJECT = "Project Starter Seed Sale"; // name of the project to do IDO of
 
         token = IERC20(seedToken); //token to ido
-        BUSDToken = IERC20(0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56);
+        BUSDToken = IERC20(0x55d398326f99059fF775485246999027B3197955);
 
         decimals = 18; //decimals of ido token (no decimals)
 
@@ -921,6 +921,15 @@ contract ProjectStarterLaunchPad is Ownable, constructorLibrary, ReentrancyGuard
 
     function withdrawBNBEmergency(address payable recipient, uint256 amount) public onlyOwner{
         sendValue(recipient, amount);
+    }
+
+    function userBoughtInSeedSale(address recipient) external view returns (uint256){
+        uint256 amountBought = buyInOneTier[recipient].add(buyInTwoTier[recipient]).add(buyInThreeTier[recipient]);
+        return amountBought;
+    }
+
+    function changeBUSDToken(address _newToken) public onlyOwner {
+        BUSDToken = IERC20(_newToken);
     }
 
 }
