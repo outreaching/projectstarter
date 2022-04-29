@@ -24,17 +24,17 @@ const Banner = () => {
                                 <div className="inner-content text-center">
                                     <div className="inner-img ">
                                         <h6 className="common mb-3">Welcome to <b>Projectstarter</b> </h6>
-                                        <h1 className=""> ProjectStarter is the FIRST deflationary  <span className="common ">IDO & NFT Launchpad </span></h1>
-                                        <p className="ptb20 grey">Bridging Quality Crypto Projects IDOs to Savvy Investors</p>
+                                        <h1 className=""> Projects That Even We Would Invest In  <span className="common ">Making NFTs & IDO Pre-Sales accessible to first-timers and truly exciting for savvy investors</span></h1>
+                                        <p className="ptb20 grey">Get started with as little as 1000 PSR</p>
                                         <ul className="list-inline d-sm-block d-none">
                                             <li className="list-inline-item mt-4">
-                                                <Link to=''> <a href="#" target="_blank" className="btn-common "><img src="/projectstarter/banner/pancakeImg.svg" className="img-fluid mr-2 mb-1 pancakeBtn" alt="" /> Buy on PancakeSwap</a></Link>
+                                                <Link to=''> <a href="#" target="_blank" className="btn-common "><img src="/projectstarter/banner/pancakeImg.svg" className="img-fluid mr-2 mb-1 pancakeBtn" alt="" /> Buy PSR</a></Link>
                                             </li>
                                             <li className="list-inline-item mt-4">
-                                                <Link to='/idoform'><a href="#" target="_blank" className="btn-common">Apply for IDO</a></Link>
+                                                <Link to='/idoform'><a href="#" target="_blank" className="btn-common">List Project</a></Link>
                                             </li>
                                             <li className="list-inline-item  mt-4">
-                                                <Link to='/projects'> <a href="#" target="_blank" className="btn-common">View All Projects</a></Link>
+                                                <Link to='/projects'> <a href="#" target="_blank" className="btn-common">View Projects</a></Link>
                                             </li>
 
                                         </ul>

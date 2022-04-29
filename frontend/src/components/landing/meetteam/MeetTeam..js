@@ -12,7 +12,7 @@ function MeatTeam() {
                             <div className="col-12">
                                 <div className="ourTeam-heading text-center ">
                                     <h1 className="common">Our Team</h1>
-                                    <p className='ptb20'>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut<br /> aliquid ex ea commodi consequatur  incidunt ut labore et dolore magnam aliquam.</p>
+                                    <p className='ptb20'>A crypto savvy team has come together to create a Launchpad that works for both new and savvy investors.</p>
                                 </div>
                             </div>
                         </div>
