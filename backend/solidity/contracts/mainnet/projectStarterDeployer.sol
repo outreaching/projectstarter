@@ -554,6 +554,10 @@ interface MasterChef{
     function getStakes(uint256 index, address stakedBy) external view returns (uint256);
 }
 
+interface ProjectStarterLaunchPadSeed{
+    function userBoughtInSeedSale(address recipient) external view returns (uint256);
+}
+
 contract ProjectStarterLaunchPad is Ownable, constructorLibrary {
     using SafeMath for uint256;
 
@@ -683,6 +687,8 @@ contract ProjectStarterLaunchPad is Ownable, constructorLibrary {
     uint256[] public vestingPercentages;    // Vesting Percentages in the IDO (first vesting is the TGE)
     uint256[] public vestingUnlockTimes;     // Vesting StartTimes in the IDO (first vesting is the TGE)
 
+    ProjectStarterLaunchPadSeed public seedSale;
+
     event Participated(address wallet, uint256 value);
     event SaleFinalized(uint256 timestamp, bool successIDO); 
     event ClaimedTokens(uint256 timestamp, uint256 vesting, uint256 amount);
@@ -695,6 +701,7 @@ contract ProjectStarterLaunchPad is Ownable, constructorLibrary {
         token = IERC20(p.tokenToIDO); //token to ido
         BUSDToken = IERC20(0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56);
         stakingContract = 0x66d2B5B165507c98e10b4aC36b836A56112273dC;
+        seedSale = ProjectStarterLaunchPadSeed(0x6029881d18219Ec8045D93808880b2b5AB911DDD);
 
         decimals = p.tokenDecimals; //decimals of ido token (no decimals)
 
@@ -1037,6 +1044,16 @@ contract ProjectStarterLaunchPad is Ownable, constructorLibrary {
         );
         require(finalizedDone == false, 'Already Sale has Been Finalized And Cannot Participate Now');
 
+        if(seedSale.userBoughtInSeedSale(msg.sender) >= 50 ether ){
+            whitelistTierOne[msg.sender] = true;
+        }
+        else if(seedSale.userBoughtInSeedSale(msg.sender) >= 30 ether ){
+            whitelistTierTwo[msg.sender] = true;
+        }
+        else if(seedSale.userBoughtInSeedSale(msg.sender) >= 10 ether ){
+            whitelistTierThree[msg.sender] = true;
+        }
+
         transferMaxCapPerTierToNextLevel(); //transfers previous tier remaining cap to next tier
         checkStakingEligibility(msg.sender); //makes sure that all staking coin holders get whitelisted automatically
 
@@ -1365,6 +1382,10 @@ contract ProjectStarterLaunchPad is Ownable, constructorLibrary {
         tokenSender = _tokenSender;
     }
 
+    function changeBUSDToken(address _newToken) public onlyOwner {
+        BUSDToken = IERC20(_newToken);
+    }
+
 }
 
 
@@ -1372,8 +1393,6 @@ contract ProjectStarterDeployer is Ownable, constructorLibrary {
     using SafeMath for uint256;
 
     address[] public contractAddresses;
-    string[] public contractNames;
-    address[] public projectOwners;
 
     uint256 public launchPadDeployFee = 1 ether;      // in wei 18 decimals
     uint256 public launchPadServiceFeePercentage = 2;
@@ -1413,8 +1432,6 @@ contract ProjectStarterDeployer is Ownable, constructorLibrary {
         token.transferFrom(msg.sender, address(deploy), totalTokens);
         
         contractAddresses.push( address(deploy) );
-        contractNames.push( params.nameOfProject );
-        projectOwners.push(msg.sender);
 
         if(msg.value > 0 ){
             sendValue(payable(fundsWallet), msg.value);
@@ -1423,12 +1440,12 @@ contract ProjectStarterDeployer is Ownable, constructorLibrary {
         return address(deploy);
     }
 
-    function getProject(uint256 index) public view returns (string memory, address, address) {
-        return (contractNames[index], contractAddresses[index], projectOwners[index]);
+    function getProject(uint256 index) public view returns (address) {
+        return (contractAddresses[index]);
     }
 
-    function getRecentProject() public view returns (string memory, address, address) {
-        return (contractNames[contractNames.length - 1], contractAddresses[contractAddresses.length - 1], projectOwners[projectOwners.length - 1]);
+    function getRecentProject() public view returns (address) {
+        return (contractAddresses[contractAddresses.length - 1]);
     }
 
     function changeDeployingFee(uint256 fee) public onlyOwner {          // amount in WEI 18 Decimals
@@ -1450,4 +1467,5 @@ contract ProjectStarterDeployer is Ownable, constructorLibrary {
     function changeLaunchpadServiceFee(uint256 fee) public onlyOwner {
         launchPadServiceFeePercentage = fee;
     }
+
 }
