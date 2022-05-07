@@ -1,5 +1,5 @@
 .main-banner {
-    background-image: url("../../../Assets/header-background.png");
+    background-image: url("../../../Assets/header-bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center bottom;
@@ -32,25 +32,7 @@
     }
 }
 
-.dark {
-    .main-banner {
-        // background: #000915;
-        background-image: url("../../../Assets/header-background-dark.png");
-    }
-    .inner-content {
-        .inner-img {
-            h1 {
-                color: #fff;
-            }
-            h6 {
-                color: #1fa5ff;
-            }
-            p {
-                color: #9eadc5;
-            }
-        }
-    }
-}
+
 
 @media (max-width: 991px) {
 }

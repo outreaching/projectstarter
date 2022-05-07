@@ -21,12 +21,12 @@ const Banner = () => {
                     <div className="container">
                         <div className="row ptb">
                             <div className="col-sm-6">
-                                <div className="inner-content text-center">
+                                <div className="inner-content">
                                     <div className="inner-img ">
-                                      
+
                                         <h1 className=""> Projects That Even  </h1>
                                         <h1 className=''>We Would Invest In</h1>
-                                       
+
                                         <ul className="list-inline d-sm-block d-none">
                                             <li className="list-inline-item mt-4">
                                                 <Link to=''> <a href="#" target="_blank" className="btn-common "><img src="/projectstarter/banner/pancakeImg.svg" className="img-fluid mr-2 mb-1 pancakeBtn" alt="" /> Buy PSR</a></Link>
@@ -59,37 +59,52 @@ const Banner = () => {
                                        <Link to='/idoform'><button href="#" target="_blank" className="btn-common w-100 mt-3">Apply for IDO</button></Link>
                                        <Link to='/projects'> <button href="#" target="_blank" className="btn-common w-100 mt-3">View All Projects</button></Link>
                                        </div> */}
-                                       <div className='d-flex flex-column mt-5 d-sm-none d-block'>
-                                       <Link to=''><button href="#" target="_blank" className="btn-common2 w-100">Join us Telegram</button></Link>
-                                       <Link to=''> <button href="#" target="_blank" className="btn-common2 mt-1 w-100">Follow our Twitter</button></Link>
-                                       <Link to=''> <button href="#" target="_blank" className="btn-common2 mt-1 w-100">Github <img src="/projectstarter/banner/github.svg" className="img-fluid ml-2 mb-1 pancakeBtn " alt="" /></button></Link>
-                                       <Link to='/rounds'> <button href="#" target="_blank" className="btn-common2 mt-1 w-100">Seed Round <img src="/projectstarter/banner/github.svg" className="img-fluid ml-2 mb-1 pancakeBtn " alt="" /></button></Link>
-                                       </div>
-
-
-                                       <ul className='list-inline ptb20 mt-5'>
-                                    <li className='list-inline-item'>
-                                        <div className='inner-user'>
-                                            <img src='\opencanvas-my-profile-assets\binancedex.png' className='img-fluid'></img>
-
+                                        <div className='d-flex flex-column mt-5 d-sm-none d-block'>
+                                            <Link to=''><button href="#" target="_blank" className="btn-common2 w-100">Join us Telegram</button></Link>
+                                            <Link to=''> <button href="#" target="_blank" className="btn-common2 mt-1 w-100">Follow our Twitter</button></Link>
+                                            <Link to=''> <button href="#" target="_blank" className="btn-common2 mt-1 w-100">Github <img src="/projectstarter/banner/github.svg" className="img-fluid ml-2 mb-1 pancakeBtn " alt="" /></button></Link>
+                                            <Link to='/rounds'> <button href="#" target="_blank" className="btn-common2 mt-1 w-100">Seed Round <img src="/projectstarter/banner/github.svg" className="img-fluid ml-2 mb-1 pancakeBtn " alt="" /></button></Link>
                                         </div>
 
-                                    </li>
-                                    <li className='list-inline-item'>
-                                        <div className='inner-text-r'>
-                                            <h6 className='grey'>BINANCE</h6>
-                                            <p className=''>SMART CHAIN</p>
-                                        </div>
-                                    </li>
-                                </ul>
+
+                                        <ul className='list-inline ptb20 mt-3 '>
+                                            <li className='list-inline-item'>
+                                                <div className='inner-user mr-5'>
+                                                    <img src='\projectstarterassets\social-icons\binance-logo.png' className='img-fluid'></img>
+
+                                                </div>
+
+                                            </li>
+                                            <li className='list-inline-item'>
+                                                <img src='\projectstarterassets\social-icons\Group8.png' className='img-fluid'></img>
+                                            </li>
+                                        </ul>
+                                        <ul className='list-inline ptb20'>
+                                            <li className='list-inline-item'>
+                                                 <img src='\projectstarterassets\social-icons\telegram-icon.svg' className='img-fluid'></img>
+                                                 
+                                            </li>
+                                            <li className='list-inline-item'>
+                                                 <img src='\projectstarterassets\social-icons\twitter-icon.svg' className='img-fluid'></img>
+                                                 
+                                            </li>
+                                            <li className='list-inline-item'>
+                                                 <img src='\projectstarterassets\social-icons\medium-icon.svg' className='img-fluid'></img>
+                                                 
+                                            </li>
+                                            
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
-<div className='col-sm-6'>
-    <div className=''>
+                            <div className='col-sm-6'>
+                                <div className=''>
+                                    <h5 className='text-center mt-3'>EARLY STAGE VC FUNDING IS OPEN. CLOSING IN</h5>
+                                    <h5 className='text-center'><strong>06:08:15:35</strong></h5>
+                                   
 
-    </div>
-</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>
