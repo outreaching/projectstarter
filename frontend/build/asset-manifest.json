@@ -1,33 +1,34 @@
 {
   "files": {
-    "main.css": "/static/css/main.ffb4f7e2.chunk.css",
-    "main.js": "/static/js/main.bc9f7399.chunk.js",
-    "main.js.map": "/static/js/main.bc9f7399.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.c0412921.js",
-    "runtime-main.js.map": "/static/js/runtime-main.c0412921.js.map",
+    "main.css": "/static/css/main.28fa53f5.chunk.css",
+    "main.js": "/static/js/main.05c15846.chunk.js",
+    "main.js.map": "/static/js/main.05c15846.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.f614693e.js",
+    "runtime-main.js.map": "/static/js/runtime-main.f614693e.js.map",
     "static/css/2.f4c56af9.chunk.css": "/static/css/2.f4c56af9.chunk.css",
-    "static/js/2.5dbed95d.chunk.js": "/static/js/2.5dbed95d.chunk.js",
-    "static/js/2.5dbed95d.chunk.js.map": "/static/js/2.5dbed95d.chunk.js.map",
-    "static/js/3.56d8bcab.chunk.js": "/static/js/3.56d8bcab.chunk.js",
-    "static/js/3.56d8bcab.chunk.js.map": "/static/js/3.56d8bcab.chunk.js.map",
+    "static/js/2.253d9c19.chunk.js": "/static/js/2.253d9c19.chunk.js",
+    "static/js/2.253d9c19.chunk.js.map": "/static/js/2.253d9c19.chunk.js.map",
+    "static/js/3.e871de50.chunk.js": "/static/js/3.e871de50.chunk.js",
+    "static/js/3.e871de50.chunk.js.map": "/static/js/3.e871de50.chunk.js.map",
     "static/js/4.296317c8.chunk.js": "/static/js/4.296317c8.chunk.js",
     "static/js/4.296317c8.chunk.js.map": "/static/js/4.296317c8.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.f4c56af9.chunk.css.map": "/static/css/2.f4c56af9.chunk.css.map",
-    "static/css/main.ffb4f7e2.chunk.css.map": "/static/css/main.ffb4f7e2.chunk.css.map",
-    "static/js/2.5dbed95d.chunk.js.LICENSE.txt": "/static/js/2.5dbed95d.chunk.js.LICENSE.txt",
+    "static/css/main.28fa53f5.chunk.css.map": "/static/css/main.28fa53f5.chunk.css.map",
+    "static/js/2.253d9c19.chunk.js.LICENSE.txt": "/static/js/2.253d9c19.chunk.js.LICENSE.txt",
     "static/media/idoform.scss": "/static/media/background-banner.814888c0.png",
     "static/media/footer.scss": "/static/media/footer-light-bg.3b3cec3d.png",
     "static/media/footersecondary.scss": "/static/media/footer2-dark.444da3c6.png",
     "static/media/staking.scss": "/static/media/header-background.eacaac8a.png",
+    "static/media/banner.scss": "/static/media/header-bg.10143a39.jpg",
     "static/media/faqs.scss": "/static/media/sign-up-background.6495f1d6.png",
-    "static/media/spinner.f4f287b3.svg": "/static/media/spinner.f4f287b3.svg"
+    "static/media/spinner.0dc76c50.svg": "/static/media/spinner.0dc76c50.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.c0412921.js",
+    "static/js/runtime-main.f614693e.js",
     "static/css/2.f4c56af9.chunk.css",
-    "static/js/2.5dbed95d.chunk.js",
-    "static/css/main.ffb4f7e2.chunk.css",
-    "static/js/main.bc9f7399.chunk.js"
+    "static/js/2.253d9c19.chunk.js",
+    "static/css/main.28fa53f5.chunk.css",
+    "static/js/main.05c15846.chunk.js"
   ]
 }
