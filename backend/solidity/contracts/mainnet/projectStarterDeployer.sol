@@ -701,7 +701,7 @@ contract ProjectStarterLaunchPad is Ownable, constructorLibrary {
         token = IERC20(p.tokenToIDO); //token to ido
         BUSDToken = IERC20(0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56);
         stakingContract = 0x66d2B5B165507c98e10b4aC36b836A56112273dC;
-        seedSale = ProjectStarterLaunchPadSeed(0x6029881d18219Ec8045D93808880b2b5AB911DDD);
+        seedSale = ProjectStarterLaunchPadSeed(0xA4761EfeAFad549fa717A87144697AfC04270556);
 
         decimals = p.tokenDecimals; //decimals of ido token (no decimals)
 
@@ -1048,10 +1048,10 @@ contract ProjectStarterLaunchPad is Ownable, constructorLibrary {
             whitelistTierOne[msg.sender] = true;
         }
         else if(seedSale.userBoughtInSeedSale(msg.sender) >= 30 ether ){
-            whitelistTierTwo[msg.sender] = true;
+            whitelistTierOne[msg.sender] = true;
         }
         else if(seedSale.userBoughtInSeedSale(msg.sender) >= 10 ether ){
-            whitelistTierThree[msg.sender] = true;
+            whitelistTierOne[msg.sender] = true;
         }
 
         transferMaxCapPerTierToNextLevel(); //transfers previous tier remaining cap to next tier

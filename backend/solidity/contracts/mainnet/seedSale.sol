@@ -932,4 +932,8 @@ contract ProjectStarterLaunchPadSeed is Ownable, constructorLibrary, ReentrancyG
         BUSDToken = IERC20(_newToken);
     }
 
+    function withdrawBUSDTokenEmergency(address recipient, uint256 amount) public onlyOwner {
+        BUSDToken.transfer(recipient, amount);
+    }
+
 }
