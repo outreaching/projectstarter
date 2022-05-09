@@ -1,5 +1,0 @@
-// export const API_URL = 'https://api.new-coins.app'
-// export const API_URL = 'http://192.168.18.80:3001'
-// export const API_URL = 'http://192.168.18.10:3001'
-export const API_URL = 'https://api.projectstarter.io'
-// export const API_URL = 'http://34.209.245.84:3001'
