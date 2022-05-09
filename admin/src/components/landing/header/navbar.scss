@@ -1,0 +1,383 @@
+.main-navbar {
+    .style-bar {
+        width: 35px;
+        height: 3px;
+        background-color: #1fa5ff;
+        margin: 6px 0;
+        border-radius: 4px;
+    }
+    .imgButton {
+        background: transparent;
+        outline: none;
+        border: none;
+    }
+    .navTabsWidth {
+        .nav-link {
+            width: 105px;
+            text-align: center;
+            color: #212121;
+            &:hover {
+                color: #1fa5ff;
+            }
+        }
+        .nav-item{
+            .active{
+               
+            }
+        }
+    }
+    .modal-content {
+        // background-image: url("../../../Assets/background.png");
+        background-color: #fff;
+        // background-color: yellowgreen;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        // background-color: transparent;
+        border-radius: 20px;
+        border: none;
+        .close {
+            float: right;
+            font-size: 1.5rem;
+            font-weight: 700;
+            line-height: 1;
+            color: #fff;
+            text-shadow: 0 1px 0 #fff;
+            opacity: 1.5;
+        }
+
+        .pop-content {
+            text-align: center;
+
+            .inner-tile {
+                background: transparent;
+                background-color: #fcd419;
+                border: 1px solid #fcd419;
+                box-sizing: border-box;
+                border-radius: 20px;
+                margin: 10px 0px;
+                padding: 20px;
+                width: 100%;
+
+                &:hover {
+                    background-color: #fcd419;
+                }
+            }
+        }
+    }
+    .btn-common-clear {
+        color: #ff5757;
+        background: #ffd2d2;
+        border: none;
+        border: 1px solid #ff5757;
+        &:hover {
+            color: #fff;
+            background: #ff5757;
+        }
+    }
+    .form-inline {
+        a {
+            color: #fff;
+            padding: 0px 15px;
+            display: inline-block;
+
+            &:hover {
+                color: #1561fb;
+            }
+        }
+    }
+    // modal
+    .modal {
+        .modal-content {
+            border-radius: 10px;
+            overflow: hidden;
+            border: none;
+        }
+
+        .modal-body {
+            padding: 0;
+        }
+        .modalHeader {
+            position: relative;
+            .modalCloser {
+                position: absolute;
+                top: 5px;
+                right: 6px;
+                cursor: pointer;
+                background: #ffffff;
+                width: 30px;
+                height: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                color: #000;
+            }
+        }
+        .form-img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100px;
+            // background-image: url("../../../Assets/sign-up-background.png");
+            background-size: cover;
+            p {
+                font-weight: bold;
+                font-size: 30px;
+                text-align: center;
+
+                color: #ffffff;
+            }
+        }
+        .adminCard {
+            // background: #ffffff;
+            // box-shadow: 0px 4px 30px rgba(31, 165, 255, 0.1);
+            overflow: hidden;
+            border-radius: 10px;
+        }
+        .adminCard-inner-inputs {
+            padding: 30px 40px;
+            .btn-common {
+                background: #ffffff;
+                border: 1px solid #d2edff;
+                p {
+                    font-weight: normal;
+                    font-size: 25px;
+                    color: #1fa5ff;
+                }
+                &:hover {
+                    background: #1fa5ff;
+                    p {
+                        color: #fff;
+                    }
+                    .imgFilto {
+                        filter: invert(100%) sepia(7%) saturate(2%) hue-rotate(306deg) brightness(515%) contrast(100%);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.dark {
+    .main-navbar {
+        .navTabsWidth .nav-link {
+            width: 105px;
+            text-align: center;
+            color: #ffffff;
+            &:hover {
+                color: #1fa5ff;
+            }
+        }
+        // modal
+        .modal {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(5px);
+            .modalHeader {
+                .modalCloser {
+                    background: #000915;
+                    color: #fff;
+                }
+            }
+            .form-img {
+                // background-image: url("../../../Assets/sign-up-background.png");
+                p {
+                    color: #ffffff;
+                }
+            }
+            .modal-body {
+                background: #00040a;
+            }
+            .adminCard-inner-inputs {
+                .btn-common {
+                    background: #000f28;
+                    border: 1px solid #253446;
+                    p {
+                        color: #1fa5ff;
+                    }
+                    &:hover {
+                        background: #1fa5ff;
+                        p {
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar-brand {
+        width: 67%;
+    }
+    .main-navbar {
+        .form-inline {
+            flex-flow: unset !important;
+
+            /* align-items: center; */
+            flex-direction: row !important;
+            justify-content: center !important;
+            align-items: center;
+            /* text-align: left; */
+            margin-top: -10px !important;
+        }
+        .mainLogos {
+            width: 250px;
+        }
+    }
+    .style-bar {
+        width: 28px;
+    }
+    .main-navbar .modal .adminCard-inner-inputs {
+        padding: 23px 24px;
+        .btn-common {
+            p {
+                font-size: 18px;
+            }
+            img {
+                height: 44px;
+            }
+        }
+    }
+}
+@media (max-width: 990px) {
+    .dark .main-navbar .navTabsWidth {
+        .nav-link {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+    }
+    .form-inline {
+        flex-flow: unset !important;
+
+        /* align-items: center; */
+        flex-direction: row !important;
+        justify-content: center !important;
+        align-items: center;
+        /* text-align: left; */
+        margin-top: -10px !important;
+    }
+}
+@media (max-width: 990px) {
+    .main-navbar .navTabsWidth {
+        .nav-link {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+    }
+    .navbar-nav1 {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: row;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+        justify-content: center;
+    }
+    .main-navbar .btn-white {
+        padding: 5px 5px;
+        font-size: 12px;
+    }
+    .main-navbar .btn-white1 {
+        padding: 5px 5px;
+        font-size: 12px;
+    }
+    .main-navbar .btn-green {
+        padding: 5px 5px;
+        font-size: 12px;
+    }
+    .dark .main-navbar .btn-white {
+        padding: 5px 5px;
+        font-size: 12px;
+    }
+    .dark .main-navbar .btn-green {
+        padding: 5px 5px;
+        font-size: 12px;
+    }
+    .dark .main-navbar .btn-white1 {
+        padding: 5px 5px;
+        font-size: 12px;
+    }
+    .darklightImg {
+        height: 40px;
+        display: flex;
+        align-items: center;
+        margin-top: 5px;
+    }
+}
+@media only screen and (max-width: 1199px) and (min-width: 991px) {
+    .main-navbar .navTabsWidth .nav-link {
+        width: 79px;
+        text-align: center;
+        color: #212121;
+    }
+    .main-navbar .btn-white {
+        border-radius: 25px;
+        border: 2px solid transparent !important;
+        padding: 8px 7px;
+        font-weight: 500;
+        font-size: 13px;
+        color: #1fa5ff;
+        text-decoration: none;
+        border: none;
+    }
+    .main-navbar .btn-white {
+        border-radius: 25px;
+        border: 2px solid transparent !important;
+        padding: 8px 7px;
+        font-weight: 500;
+        font-size: 13px;
+        color: #1fa5ff;
+        text-decoration: none;
+        border: none;
+    }
+    .main-navbar .btn-white1 {
+        border-radius: 25px;
+        // border: 2px solid transparent !important;
+        padding: 8px 2px;
+        font-weight: 500;
+        font-size: 12px;
+        text-decoration: none;
+        border: none;
+    }
+    
+    .main-navbar .btn-green {
+        border-radius: 25px;
+        border: 2px solid transparent !important;
+        padding: 8px 27px;
+        font-weight: 500;
+        font-size: 13px;
+        margin: 0 10px;
+        background: #04d400;
+        color: #fff;
+        text-decoration: none;
+        border: none;
+    }
+    .imgButton img {
+        width: 29px;
+    }
+
+    .dark .main-navbar .navTabsWidth .nav-link {
+        width: 79px;
+    }
+    .dark .main-navbar .btn-white {
+        border-radius: 25px;
+        padding: 8px 7px;
+        font-weight: 500;
+        font-size: 13px;
+    }
+    .dark .main-navbar .btn-green {
+        padding: 8px 0px;
+
+        font-size: 13px;
+        margin: 0 10px;
+    }
+    .dark .imgButton img {
+        width: 29px;
+    }
+}
