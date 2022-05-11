@@ -33,11 +33,11 @@ function App() {
           pauseOnHover
         />
         <Switch>
-          <Route exact path='/' component={Landing} />
+          {/* <Route exact path='/' component={Landing} /> */}
           <Route exact path='/kyc1' component={Car} />
           <Route exact path='/projects' component={Projects} />
           <Route exact path='/rounds' component={Rounds} />
-          <Route exact path='/staking' component={Staking} />
+          <Route exact path='/' component={Staking} />
           <Route exact path='/projectdetail/:id' component={ProjectDetail} />
           <Route exact path='/idoform' component={IdoForm} />
           <Route exact path='/verification' component={Verification} />

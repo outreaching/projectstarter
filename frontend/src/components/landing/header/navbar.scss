@@ -423,19 +423,68 @@
 }
 
 .ahshdhbas {
-    background-color: transparent;
-    border: none;
-    border-radius: 100px;
-    padding: 0px;
+    // background-color: transparent;
+    // border: none;
+    // border-radius: 100px;
+    // padding: 0px;
+    background: #090A1F;
+    border: 1.5px solid #1FA4FE;
+    border-radius: 128px;
+    padding: 0 !important;
+    &:hover{
+        background: #1FA4FE !important;
+    }
+
     // padding: 9px 20px;
     a {
-        color: #000000 !important;
+        color: #ffffff !important;
         padding: 9px 20px !important;
     }
 }
 
+
+
 .navbar-brand {
     img {
         width: 275px;
+    }
+}
+
+
+.dark .main-navbar .navTabsWidth .nav-link{
+    width: 100%;
+}
+.main-navbar .navTabsWidth .nav-item{
+    margin-right: 20px;
+}
+
+.bg_trans{
+    background: transparent !important;
+    box-shadow: unset !important;
+}
+
+.main-navbar .navTabsWidth .nav-item .nav-link:hover{
+    color: #1fa5ff !important;
+}
+
+
+.my_class_style{
+    background: transparent !important;
+    box-shadow: unset !important;
+    background: #090A1F;
+    border: 1.5px solid #1FA4FE !important;
+    &:hover{
+        background: #1FA4FE !important;
+    }
+}
+.main-navbar .form-inline a{
+    background: transparent !important;
+    margin: 0 !important;
+}
+
+
+@media (max-width: 360px) {
+    .main-navbar .mainLogos{
+        width: 160px !important;
     }
 }

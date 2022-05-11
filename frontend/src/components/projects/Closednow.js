@@ -234,7 +234,9 @@ const ClosedNow = ({ item }) => {
               </div>
             </div>
           </div>
+    
         </Link>
+      
       </div>
   );
 

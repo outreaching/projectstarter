@@ -9,7 +9,9 @@ const Footer = () => {
                 <section className="main-footer ptb">
 
                     <div className="container">
-                        <div className="row">
+                        <p className='footer_para'>ProjectStarter © Copyright 2022. All rights reserved.</p>
+                        <p className='footer_para_bottom'>All trademarks and copyrights belong to their respective owners.</p>
+                        {/* <div className="row">
                             <div className="col-sm-3 text-center">
                                 <div className="inner-icon">
                                     <a className="navbar-brand" href="/">
@@ -72,7 +74,7 @@ const Footer = () => {
                                     </ul>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
 
                     </div>
                 </section>

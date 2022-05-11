@@ -113,9 +113,9 @@ const Navbar = () => {
   useEffect(() => {
     let themo = localStorage.getItem("wtTheme");
     if (themo === null) {
-      localStorage.setItem("wtTheme", "light");
-      setTheme("light");
-      dispatch(userTheme("light"));
+      localStorage.setItem("wtTheme", "dark");
+      setTheme("dark");
+      dispatch(userTheme("dark"));
     } else {
       setTheme(themo);
       dispatch(userTheme(themo));
@@ -175,29 +175,29 @@ const Navbar = () => {
                     id="navbarSupportedContent"
                   >
                     <ul className="navbar-nav navbar-nav1 navTabsWidth mr-auto ">
-                      <li className="nav-item">
+                      {/* <li className="nav-item">
                         <Link className="nav-link active btn-white" to="/">
                           Home
                         </Link>
-                      </li>
+                      </li> */}
                       <li className="nav-item">
-                        <Link className="nav-link btn-white" to="/projects">
+                        <Link className="nav-link btn-white bg_trans" to="/projects">
                           Projects
                         </Link>
                       </li>
                       <li className="nav-item">
-                        <Link to="/staking" className="nav-link btn-white">
+                        <Link to="/" className="nav-link btn-white bg_trans">
                           Staking
                         </Link>
                       </li>
                       <li className="nav-item">
-                        <Link to="/" className="nav-link btn-white">
+                        <Link to="/" className="nav-link btn-white bg_trans">
                         NFTs
                         <div className="badge">Coming Soon</div>
                         </Link>
                       </li>
                       <li className="nav-item">
-                        <Link to="/" className="nav-link btn-white">
+                        <Link to="/" className="nav-link btn-white bg_trans">
                         NFT Marketplace
                         <div className="badge">Coming Soon</div>
                         </Link>
@@ -261,7 +261,7 @@ const Navbar = () => {
                         </li>
                       )}
                     </ul>
-                    <form className="form-inline mt-0 my-lg-0 ">
+                    <form className="form-inline mt-0 my-lg-0 my_class_style_form">
                       {/* <button type="button" onClick={setVersion} className='imgButton mb-md-0 mb-2'>{dark === 'dark' ? <img src="projectstarter/moon-icon.svg" className='img-fluid darklightImg' alt="" /> : <img src="projectstarter/sun-icon.svg" className='img-fluid darklightImg' alt="" />}</button>
                                     <button type='button' data-toggle="modal" data-target="#exampleModalconnect" className="nav-link btn-white">
                                         Connect Wallet
@@ -305,7 +305,7 @@ const Navbar = () => {
                           type="button"
                           data-toggle="modal"
                           onClick={opeeennn}
-                          className="nav-link btn-white"
+                          className="nav-link btn-white my_class_style"
                         >
                           Connect
                         </button>

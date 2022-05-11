@@ -9,6 +9,7 @@ import { useWeb3React } from '@web3-react/core';
 import { toast } from 'react-toastify';
 import { Backdrop } from '@material-ui/core';
 import axios from 'axios';
+import Footer from '../landing/footer/Footer';
 function Admin() {
     const dark = useSelector(state => state.UserReducer.theme);
     const [allprojectss, setallprojectss] = useState([]);
@@ -365,6 +366,7 @@ function Admin() {
                     </div>
                 </section>
                 <FooterSecondary /></div>
+                <Footer />
         </>
     )
 }
