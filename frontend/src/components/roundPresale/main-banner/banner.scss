@@ -1,8 +1,9 @@
 .main-banner {
-  background-image: url("../../../Assets/header-background.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center bottom;
+  // background-image: url("../../../Assets/header-background.png");
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // background-position: center bottom;
+  background-color: #0b0c22 !important;
 
   // background-image: url("../../../Assets/header-background.png");
   // background-repeat: no-repeat;
@@ -46,7 +47,7 @@
         grid-column-gap: 23px;
         padding: 30px 10px 10px 10px;
         .cards {
-          background-color: rgba(255, 255, 255, 0.8);
+          // background-color: rgba(255, 255, 255, 0.8);
           text-align: center;
           font-size: 22px;
           font-weight: 500;
@@ -92,6 +93,7 @@
         }
         .card-bord {
           border: 3px solid #1fa5ff;
+          background: #252633 !important;
         }
         .card-bordwhite {
           border: 3px solid #f0f4f8;
@@ -121,7 +123,8 @@
   .main-banner {
     min-height: 100vh;
     // background: #000915;
-    background-image: url("../../../Assets/header-background-dark.png");
+    // background-image: url("../../../Assets/header-background-dark.png");
+    background-color: #0b0c22 !important;
   }
   .inner-content {
     .inner-img {
@@ -220,4 +223,9 @@
       }
     }
   }
+}
+
+
+.my_btn{
+  line-height: normal !important;
 }

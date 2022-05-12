@@ -941,7 +941,7 @@ function Staking() {
                                                                                 <img
                                                                                     src={
                                                                                         dark === "dark"
-                                                                                            ? "projectstarter/staking/unstake/initUnstake-dark.svg"
+                                                                                            ? "projectstarter/staking/withdraw/initWithdraw-dark.svg"
                                                                                             : "projectstarter/staking/unstake/initUnstake-copy.svg"
                                                                                     }
                                                                                     alt=""

@@ -3,7 +3,7 @@
     // background-position: bottom;
     // background-repeat: no-repeat;
     // background-size: cover;
-    background: #000915 !important;
+    background-color: #0b0c22 !important;
     padding: 240px 0 5px;
     // padding: 180px  0px;
     // padding-top: 280px;
@@ -25,15 +25,16 @@
 
 .dark {
     .footerSecondary-main {
-        background-image: url("../../Assets/footer2-dark.png");
-        background-position: bottom;
-        background-repeat: no-repeat;
-        background-size: cover;
+        // background-image: url("../../Assets/footer2-dark.png");
+        // background-position: bottom;
+        // background-repeat: no-repeat;
+        // background-size: cover;
+        background-color: #0b0c22 !important;
         padding: 240px 0 5px;
         // padding: 180px  0px;
         // padding-top: 280px;
         p {
-            color: #000;
+            color: #fff;
         }
 
         @media (max-width: 661px) {

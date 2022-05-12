@@ -332,13 +332,13 @@ const Banner = () => {
                       </div>
                     </div>
                     <div className="pt-5 d-flex justify-content-center align-items-center">
-                      <button onClick={() => getClaimed()} className="but ml-4">
+                      <button onClick={() => getClaimed()} className="but my_btn ml-4">
                         Claim
                       </button>
                       {/* <button className="but">Approve</button> */}
                       <button
                         onClick={() => getParticipated()}
-                        className="but ml-4"
+                        className="but  my_btn ml-4"
                       >
                         {busdBalance <= participate ? (
                           "Insufficient Funds"
