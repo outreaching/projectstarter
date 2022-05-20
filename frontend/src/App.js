@@ -39,7 +39,7 @@ function App() {
           <Route exact path='/projects' component={Projects} />
           {/* <Route exact path='/rounds' component={Rounds} /> */}
           <Route exact path='/' component={Staking} />
-          <Route exact path='/banner1' component={Banner1} />
+          <Route exact path='/rounds' component={Banner1} />
           <Route exact path='/projectdetail/:id' component={ProjectDetail} />
           <Route exact path='/idoform' component={IdoForm} />
           <Route exact path='/verification' component={Verification} />
