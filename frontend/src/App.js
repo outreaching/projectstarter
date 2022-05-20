@@ -15,6 +15,7 @@ import Verification from './components/kyc-verification/Verification';
 import useEagerConnect from './hooks/useEagerConnect';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Banner1 from './components/main-banner1/Banner1.js';
 
 function App() {
   useEagerConnect()
@@ -29,7 +30,7 @@ function App() {
           closeOnClick
           rtl={false}
           pauseOnFocusLoss
-          draggable
+          draggabless
           pauseOnHover
         />
         <Switch>
@@ -38,6 +39,7 @@ function App() {
           <Route exact path='/projects' component={Projects} />
           <Route exact path='/rounds' component={Rounds} />
           <Route exact path='/' component={Staking} />
+          <Route exact path='/banner1' component={Banner1} />
           <Route exact path='/projectdetail/:id' component={ProjectDetail} />
           <Route exact path='/idoform' component={IdoForm} />
           <Route exact path='/verification' component={Verification} />
