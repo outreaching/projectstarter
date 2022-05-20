@@ -195,16 +195,16 @@ const Banner1 = () => {
                       </p>
                       <div className="card-wraps">
                         <div
-                          onClick={() => selectPack(1)}
+                          // onClick={() => selectPack(1)}
                           className={
-                            "cards bg-white cursor-pointer " +
-                            (tier === 2
+                            "cards bg-white shvxsc cursor-pointer " +
+                            (tier === 3
                               ? "card-bord"
                               : "card-bordwhite")
                           }
                         >
-                          <div className="sold-out">Sold Out</div>
                           <div className="header">VC Package 1</div>
+                          <div className="sold-out111">Sold Out</div>
                           <div className="heading">
                             <p>
                               10,000<span>USDT</span>
@@ -244,7 +244,7 @@ const Banner1 = () => {
                           onClick={() => selectPack(2)}
                           className={
                             "cards bg-white cursor-pointer " +
-                            (tier === 3 
+                            (tier === 2
                               ? "card-bord"
                               : "card-bordwhite")
                           }
