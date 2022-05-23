@@ -37,7 +37,7 @@ function App() {
           {/* <Route exact path='/' component={Landing} /> */}
           <Route exact path='/kyc1' component={Car} />
           <Route exact path='/projects' component={Projects} />
-          {/* <Route exact path='/rounds' component={Rounds} /> */}
+          <Route exact path='/packages' component={Rounds} />
           <Route exact path='/' component={Staking} />
           <Route exact path='/rounds' component={Banner1} />
           <Route exact path='/projectdetail/:id' component={ProjectDetail} />
